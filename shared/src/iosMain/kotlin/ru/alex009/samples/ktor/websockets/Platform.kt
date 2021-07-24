@@ -11,9 +11,7 @@ actual class Platform actual constructor() {
 }
 
 actual fun createHttpClientEngine(): HttpClientEngine {
-    return Ios.create {
-
-    }
+    return WSIosHttpClientEngine(Ios.create { })
 }
 
 actual fun log(message: String) {
