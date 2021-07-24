@@ -19,9 +19,7 @@ class Greeting {
 
     fun testRequest() {
         val httpClient = HttpClient(createHttpClientEngine()) {
-            install(WebSockets) {
-                pingInterval = 1000L
-            }
+            install(WebSockets)
         }
         GlobalScope.launch(Dispatchers.Main) {
             log("try connect websocket")
