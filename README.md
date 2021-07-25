@@ -46,3 +46,6 @@ WSIosHttpClientEngine(wrappedEngine = Ios.create { })
 ```
 
 For details see classes: `WSIosHttpClientEngine`, `IosWebSocket`.
+
+# Plans
+Implementation will be moved into moko-network - https://github.com/icerockdev/moko-network/issues/149
